@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    width: auto;
+    background: rgb(5, 15, 155);
+    background: -webkit-linear-gradient(to right, rgb(53, 142, 239), rgb(5, 15, 155));
+    background: linear-gradient(to right, rgb(53, 142, 239), rgb(5, 15, 155));
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+#weekday {
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#quote {
+    font-size: 2rem;
+    color: #fff;
+}

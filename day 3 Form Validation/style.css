@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(100, 100, 155);
+    background: -webkit-linear-gradient(to right, rgb(100, 100, 155), rgb(100, 100, 100));
+    background: linear-gradient(to right, rgb(100, 100, 155), rgb(100, 100, 100));
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
+    padding: 20px 40px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.control-form {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.control-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.control-form input {
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.control-form input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.control-form.success input {
+    border-color: rgb(46, 204, 113);
+}
+.control-form.fail input {
+    border-color: rgb(231, 76, 60);
+}
+
+.control-form i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.control-form.success i.fa-check-circle {
+    color: rgb(46, 204, 113);
+    visibility: visible;
+}
+.control-form.fail i.fa-exclamation-circle {
+    color: rgb(231, 76, 60);
+    visibility: visible;
+}
+
+.control-form small {
+    color: rgb(231, 76, 60);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.control-form.fail small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: rgb(5, 15, 155);
+    border: 2px solid rgb(5, 15, 155);
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
